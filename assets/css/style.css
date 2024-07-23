@@ -45,9 +45,11 @@
     width: 40px;
     height: 23px;
     border-radius: 11.5px;
-    border: 1px solid #00000033;
+    outline: 1px solid #00000033;
     background-color: #F0F0F0;
     position: relative;
+    border: none;
+    transition: all .3s linear;
 }
 
 .py--3 {
@@ -56,14 +58,15 @@
 }
 
 .button::before {
-    margin: 1px;
+   
     position: absolute;
     content: "";
     background: #000;
-    width: 21px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     border-radius: 11.5px;
-    padding: 1px;
+    
+    transition: all .3s linear;
 }
 
 #toggler:checked+.button {
@@ -73,7 +76,7 @@
 
 #toggler:checked+.button::before {
     transform: translatex(17px);
-    background: white;
+    background-color: white !important;
     transition: all .3s linear;
 }
 
@@ -284,6 +287,19 @@ label[for="Most Liked"] {
     border: none;
     background: none;
 }
+
+label[for="recently"] {
+    color: #636363;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    background: none;
+}
+
+
 
 .text {
     color: #000;
